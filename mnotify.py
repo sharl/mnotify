@@ -19,8 +19,6 @@ class taskTray:
     def __init__(self):
         # スレッド実行モード
         self.running = False
-        # 未読数
-        self.unread = 0
 
         with open(CONFIG) as fd:
             self.config = json.load(fd)
